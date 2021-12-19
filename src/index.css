@@ -1,13 +1,84 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #667acf;
+    height: 100vh;
+}
+
+.list {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 3px 4px 4px 2px rgba(0, 0, 0, 0.3);
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: #667acf;
+    font-size: 1.2rem;
+    font-weight: 900;
+    line-height: 30px;
+}
+
+p {
+    font-weight: normal !important;
+
+}
+
+
+.card {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: .75rem;
+    -webkit-column-gap: .75rem;
+    column-gap: .75rem;
+    margin-bottom: 1.5rem;
+    align-items: center;
+}
+
+.btn {
+    border-radius: 4px;
+    background: #667acf;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    align-self: center;
+    margin:2rem auto 0;
+    align-content: center;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 50%;
+    width: 80px;
+    margin-right: 10px;
+    height: 80px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.3);
+}
+
+.outline{
+    background: transparent !important;
+    border:2px solid #667acf;
+    font-weight: 600;
+    margin-left: 20px;
+    color: #667acf;
+    cursor: pointer;
+    transition: .4s ease-in;
+}
+
+.outline:hover{
+    background: #667acf !important;
+    border: 2px solid white;
+    color: white;
 }
